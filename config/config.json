@@ -1,0 +1,8 @@
+{
+    "PRETRAINED_MODEL": "bert-base-uncased",
+    "SAVE_MODEL_PATH": "./save_model/",
+    "SAVE_MODEL_NAME": "roberta_base_uncased",
+    "DATA_PATH": "./data/",
+    "DATA_TRAIN_FILE": "train.csv",
+    "DATA_TEST_FILE": "test.csv"
+}
