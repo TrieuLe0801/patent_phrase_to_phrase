@@ -1,4 +1,7 @@
 {
+    "MAX_LENGTH": 256,
+    "BATCH_SIZE":8,
+    "DROPOUT_RATE":0.2,
     "PRETRAINED_MODEL": "bert-base-uncased",
     "SAVE_MODEL_PATH": "./save_model/",
     "SAVE_MODEL_NAME": "roberta_base_uncased",

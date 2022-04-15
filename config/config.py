@@ -12,6 +12,17 @@ config = json.load(open(config_path))
 
 
 class Config:
+    MAX_LENGTH = (
+        os.getenv("MAX_LENGTH") if os.getenv("MAX_LENGTH") else config["MAX_LENGTH"]
+    )
+    BATCH_SIZE = (
+        os.getenv("BATCH_SIZE") if os.getenv("BATCH_SIZE") else config["BATCH_SIZE"]
+    )
+    DROPOUT_RATE = (
+        os.getenv("DROPOUT_RATE")
+        if os.getenv("DROPOUT_RATE")
+        else config["DROPOUT_RATE"]
+    )
     PRETRAINED_MODEL = (
         os.getenv("PRETRAINED_MODEL")
         if os.getenv("PRETRAINED_MODEL")
